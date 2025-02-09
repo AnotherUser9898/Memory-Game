@@ -1,0 +1,23 @@
+article.card-container {
+    width: 25%;
+    height: auto;
+    padding: 1rem;
+    background-color: bisque;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+article.card-container:hover {
+    transform: translateY(-5px);
+    transition-duration: 0.05s;
+}
+
+.image-container {
+    max-width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.pokemon-image {
+    max-width: 100%;
+}
