@@ -1,10 +1,15 @@
+:root {
+    --card-color: #f2cc8f;
+}
+
 article.card-container {
-    width: 25%;
+    width: clamp(25%,260px,100%);
     height: auto;
     padding: 1rem;
-    background-color: bisque;
+    background-color: var(--card-color);
     border-radius: 5px;
     transition-duration: 0.4s;
+    margin-top: 2rem;
 }
 
 article.card-container:hover {
@@ -13,11 +18,11 @@ article.card-container:hover {
 }
 
 .image-container {
-    max-width: 100%;
+    width: 100%;
     background-color: white;
     border-radius: 5px;
 }
 
 .pokemon-image {
-    max-width: 100%;
+    width: 100%;
 }

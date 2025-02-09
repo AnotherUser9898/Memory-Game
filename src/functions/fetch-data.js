@@ -1,7 +1,7 @@
 async function fetchData() {
-    const pokemonIDs = [1, 8];
-
-    // 28, 52, 43, 77, 119, 223, 74, 65, 51, 35, 19, 12, 205,
+    const pokemonIDs = [
+        1, 8, 28, 52, 43, 77, 119, 223, 74, 65, 51, 35, 19, 12, 205,
+    ];
     const apiPrefix = 'https://pokeapi.co/api/v2/pokemon/';
 
     const pokemonData = [];
@@ -16,7 +16,9 @@ async function fetchData() {
 
     const objectArray = JSONarray.map((data) => {
         return {
-            name: data['forms'][0]['name'],
+            name:
+                String(data['forms'][0]['name']).charAt(0).toUpperCase() +
+                String(data['forms'][0]['name']).slice(1),
             imageURL:
                 data['sprites']['other']['official-artwork']['front_default'],
             key: crypto.randomUUID(),

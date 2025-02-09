@@ -1,9 +1,53 @@
-:root {
-  font-family:Arial, Helvetica, sans-serif
+@font-face {
+  font-family: "PlayWrite";
+  src: url("./assets/fonts/PlaywriteAUVIC-VariableFont_wght.ttf");
 }
+
+:root {
+  font-family: "PlayWrite";
+  --background-color: #81b29a;
+  --tagline-color: #f4f1de;
+  --title-color: #e07a5f
+}
+
+body {
+  background-color: var(--background-color)
+}
+
+#root {
+  padding: 0.5rem;
+}
+
+.memory-game-title,.description {
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--tagline-color);
+  margin-top: 1rem;
+}
+
+
 
 main {
   display: flex;
   flex-wrap: wrap;
   gap: 5%;
+  justify-content: center;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.score-container>div {
+  font-weight: bold;
+  color: var(--tagline-color);
 }
