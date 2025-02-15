@@ -59,8 +59,8 @@ function App() {
         <>
             <h1 className="memory-game-title">Pokemon Memory Game</h1>
             <h4 className="description">
-                Get points by clicking on images but don't click on any more
-                than once
+                Get points by clicking on images but don&apos;t click on any
+                more than once
             </h4>
             <div className="score-container">
                 <div className="best-score">
