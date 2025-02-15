@@ -10,6 +10,7 @@ article.card-container {
     border-radius: 5px;
     transition-duration: 0.4s;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 article.card-container:hover {
